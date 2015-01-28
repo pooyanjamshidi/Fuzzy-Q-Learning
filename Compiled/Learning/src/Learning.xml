@@ -1,0 +1,539 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Learning</name>
+    </assembly>
+    <members>
+        <member name="T:Learning.FQL">
+            <summary>
+            The FQL class provides a CLS compliant, MWArray interface to the MATLAB functions
+            contained in the files:
+            <newpara></newpara>
+            C:\Users\pooyanjam\Source\Repos\pooyan-amir\RL-Q\FQL\fqlearn.m
+            <newpara></newpara>
+            C:\Users\pooyanjam\Source\Repos\pooyan-amir\RL-Q\FQL\fuzzy_action_calculator.m
+            <newpara></newpara>
+            C:\Users\pooyanjam\Source\Repos\pooyan-amir\RL-Q\FQL\init_knowledge_base.m
+            <newpara></newpara>
+            C:\Users\pooyanjam\Source\Repos\pooyan-amir\RL-Q\FQL\initq.m
+            <newpara></newpara>
+            C:\Users\pooyanjam\Source\Repos\pooyan-amir\RL-Q\FQL\update_knowledge_base.m
+            <newpara></newpara>
+            deployprint.m
+            <newpara></newpara>
+            printdlg.m
+            </summary>
+            <remarks>
+            @Version 0.0
+            </remarks>
+        </member>
+        <member name="M:Learning.FQL.#cctor">
+            <summary internal= "true">
+            The static constructor instantiates and initializes the MATLAB Compiler Runtime
+            instance.
+            </summary>
+        </member>
+        <member name="M:Learning.FQL.#ctor">
+            <summary>
+            Constructs a new instance of the FQL class.
+            </summary>
+        </member>
+        <member name="M:Learning.FQL.Finalize">
+            <summary internal= "true">
+            Class destructor called by the CLR garbage collector.
+            </summary>
+        </member>
+        <member name="M:Learning.FQL.Dispose">
+            <summary>
+            Frees the native resources associated with this object
+            </summary>
+        </member>
+        <member name="M:Learning.FQL.Dispose(System.Boolean)">
+            <summary internal= "true">
+            Internal dispose function
+            </summary>
+        </member>
+        <member name="M:Learning.FQL.fqlearn">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the fqlearn MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function implements Fuzzy Q-Learning
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fqlearn(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the fqlearn MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function implements Fuzzy Q-Learning
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="Q_in1">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fqlearn(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the fqlearn MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function implements Fuzzy Q-Learning
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="Q_in1">Input argument #1</param>
+             <param name="current_state">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fqlearn(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the fqlearn MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function implements Fuzzy Q-Learning
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="Q_in1">Input argument #1</param>
+             <param name="current_state">Input argument #2</param>
+             <param name="next_state">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fqlearn(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 4-input MWArrayinterface to the fqlearn MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function implements Fuzzy Q-Learning
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="Q_in1">Input argument #1</param>
+             <param name="current_state">Input argument #2</param>
+             <param name="next_state">Input argument #3</param>
+             <param name="ais">Input argument #4</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fqlearn(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the fqlearn MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function implements Fuzzy Q-Learning
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fqlearn(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the fqlearn MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function implements Fuzzy Q-Learning
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="Q_in1">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fqlearn(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the fqlearn MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function implements Fuzzy Q-Learning
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="Q_in1">Input argument #1</param>
+             <param name="current_state">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fqlearn(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the fqlearn MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function implements Fuzzy Q-Learning
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="Q_in1">Input argument #1</param>
+             <param name="current_state">Input argument #2</param>
+             <param name="next_state">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fqlearn(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 4-input MWArray interface to the fqlearn MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function implements Fuzzy Q-Learning
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="Q_in1">Input argument #1</param>
+             <param name="current_state">Input argument #2</param>
+             <param name="next_state">Input argument #3</param>
+             <param name="ais">Input argument #4</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fqlearn(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the fqlearn function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             This function implements Fuzzy Q-Learning
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:Learning.FQL.fuzzy_action_calculator">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the fuzzy_action_calculator
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function returns the global action inferred by the FLC. This should be
+             enacted to the enviornment
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fuzzy_action_calculator(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the fuzzy_action_calculator
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function returns the global action inferred by the FLC. This should be
+             enacted to the enviornment
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="Q">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fuzzy_action_calculator(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the fuzzy_action_calculator
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function returns the global action inferred by the FLC. This should be
+             enacted to the enviornment
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="Q">Input argument #1</param>
+             <param name="input">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fuzzy_action_calculator(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the fuzzy_action_calculator
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function returns the global action inferred by the FLC. This should be
+             enacted to the enviornment
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="Q">Input argument #1</param>
+             <param name="input">Input argument #2</param>
+             <param name="epsilon">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fuzzy_action_calculator(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the fuzzy_action_calculator
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function returns the global action inferred by the FLC. This should be
+             enacted to the enviornment
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fuzzy_action_calculator(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the fuzzy_action_calculator
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function returns the global action inferred by the FLC. This should be
+             enacted to the enviornment
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="Q">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fuzzy_action_calculator(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the fuzzy_action_calculator
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function returns the global action inferred by the FLC. This should be
+             enacted to the enviornment
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="Q">Input argument #1</param>
+             <param name="input">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fuzzy_action_calculator(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the fuzzy_action_calculator
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function returns the global action inferred by the FLC. This should be
+             enacted to the enviornment
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="Q">Input argument #1</param>
+             <param name="input">Input argument #2</param>
+             <param name="epsilon">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.fuzzy_action_calculator(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the fuzzy_action_calculator function in which the input
+             and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             This function returns the global action inferred by the FLC. This should be
+             enacted to the enviornment
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:Learning.FQL.init_knowledge_base">
+             <summary>
+             Provides a void output, 0-input MWArrayinterface to the init_knowledge_base
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             initializing the rule base and creating a folder for archiving them
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+            
+        </member>
+        <member name="M:Learning.FQL.init_knowledge_base(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the init_knowledge_base MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             initializing the rule base and creating a folder for archiving them
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.initq">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the initq MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function initialize the q-values in the look up table
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.initq(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the initq MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function initialize the q-values in the look up table
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.initq(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the initq function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             This function initialize the q-values in the look up table
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:Learning.FQL.update_knowledge_base">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the update_knowledge_base
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             updating the rule base
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.update_knowledge_base(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the update_knowledge_base
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             updating the rule base
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="Q">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.update_knowledge_base(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the update_knowledge_base
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             updating the rule base
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.update_knowledge_base(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the update_knowledge_base
+             MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             updating the rule base
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="Q">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:Learning.FQL.update_knowledge_base(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the update_knowledge_base function in which the input
+             and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             updating the rule base
+             Authors: Pooyan Jamshidi (pooyan.jamshidi@gmail.com)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:Learning.FQL.WaitForFiguresToDie">
+             <summary>
+             This method will cause a MATLAB figure window to behave as a modal dialog box.
+             The method will not return until all the figure windows associated with this
+             component have been closed.
+             </summary>
+             <remarks>
+             An application should only call this method when required to keep the
+             MATLAB figure window from disappearing.  Other techniques, such as calling
+             Console.ReadLine() from the application should be considered where
+             possible.</remarks>
+            
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,89 @@
+[System]
+Name='controller with sugeo'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=25
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='WorkLoad'
+Range=[0 100]
+NumMFs=5
+MF1='Low':'trimf',[14.85 31.75 48.59]
+MF2='Medium':'trimf',[30.7 50.25 67.94]
+MF3='High':'trimf',[56.41 71.75 89.27]
+MF4='VeryLow':'trapmf',[0 0 27 35.3]
+MF5='VeryHigh':'trapmf',[71.68 78 100 100]
+
+[Input2]
+Name='ResponseTime'
+Range=[0 100]
+NumMFs=5
+MF1='Fast':'trimf',[2.03 13.05 25.27]
+MF2='Medium':'trimf',[12.61 29.85 50.01]
+MF3='Slow':'trimf',[31.41 51 72.94]
+MF4='Instantaneus':'trapmf',[0 0 7.2 12.4]
+MF5='VerySlow':'trapmf',[52.18 60 100 100]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=25
+MF1='mf1':'constant',[-1.6]
+MF2='mf2':'constant',[-1.4]
+MF3='mf3':'constant',[0]
+MF4='mf4':'constant',[0.06]
+MF5='mf5':'constant',[1.4]
+MF6='mf6':'constant',[-1.3]
+MF7='mf7':'constant',[-1.1]
+MF8='mf8':'constant',[0.4]
+MF9='mf9':'constant',[1]
+MF10='mf10':'constant',[1.6]
+MF11='mf11':'constant',[-1.6]
+MF12='mf12':'constant',[-0.9]
+MF13='mf13':'constant',[0.6]
+MF14='mf14':'constant',[1.1]
+MF15='mf15':'constant',[1.5]
+MF16='mf16':'constant',[-1.8]
+MF17='mf17':'constant',[-1.4]
+MF18='mf18':'constant',[0.4]
+MF19='mf19':'constant',[1.1]
+MF20='mf20':'constant',[1.4]
+MF21='mf21':'constant',[-1.9]
+MF22='mf22':'constant',[-1.2]
+MF23='mf23':'constant',[0.5]
+MF24='mf24':'constant',[1]
+MF25='mf25':'constant',[1.6]
+
+[Rules]
+4 4, 1 (1) : 1
+4 1, 2 (1) : 1
+4 2, 3 (1) : 1
+4 3, 4 (1) : 1
+4 5, 5 (1) : 1
+1 4, 6 (1) : 1
+1 1, 7 (1) : 1
+1 2, 8 (1) : 1
+1 3, 9 (1) : 1
+1 5, 10 (1) : 1
+2 4, 11 (1) : 1
+2 1, 12 (1) : 1
+2 2, 13 (1) : 1
+2 3, 14 (1) : 1
+2 5, 15 (1) : 1
+3 4, 16 (1) : 1
+3 1, 17 (1) : 1
+3 2, 18 (1) : 1
+3 3, 19 (1) : 1
+3 5, 20 (1) : 1
+5 4, 21 (1) : 1
+5 1, 22 (1) : 1
+5 2, 23 (1) : 1
+5 3, 24 (1) : 1
+5 5, 25 (1) : 1

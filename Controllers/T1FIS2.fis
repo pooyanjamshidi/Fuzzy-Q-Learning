@@ -1,0 +1,60 @@
+[System]
+Name='T1FIS2'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=21
+AndMethod='prod'
+OrMethod='max'
+ImpMethod='prod'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='input1'
+Range=[0 5]
+NumMFs=3
+MF1='mf1':'trapmf',[0 0 1.87 2.38]
+MF2='mf2':'trimf',[0.94 2.675 4.26]
+MF3='mf3':'trapmf',[3.52 3.93 5 5]
+
+[Input2]
+Name='input2'
+Range=[0 5]
+NumMFs=3
+MF1='mf1':'trapmf',[0 0 1.87 2.38]
+MF2='mf2':'trimf',[0.94 2.675 4.26]
+MF3='mf3':'trapmf',[3.52 3.93 5 5]
+
+[Output1]
+Name='output1'
+Range=[0 5]
+NumMFs=4
+MF1='cmf2':'trimf',[0.93 2.135 3.86]
+MF2='cmf3':'trimf',[1.65 3.12 4.75]
+MF3='cmf1':'trapmf',[0 0 1.64 2.26]
+MF4='cmf4':'trapmf',[3.42 3.64 5 5]
+
+[Rules]
+1 1, 1 (0.7) : 1
+1 2, 1 (0.8) : 1
+1 3, 3 (0.9) : 1
+2 1, 2 (0.7) : 1
+2 2, 2 (0.6) : 1
+2 3, 2 (0.5) : 1
+3 1, 4 (0.8) : 1
+3 2, 4 (0.6) : 1
+3 3, 2 (0.5) : 1
+1 1, 2 (0.2) : 1
+1 1, 3 (0.1) : 1
+1 2, 3 (0.2) : 1
+1 3, 1 (0.1) : 1
+2 1, 1 (0.2) : 1
+2 1, 4 (0.1) : 1
+2 2, 1 (0.4) : 1
+2 3, 1 (0.5) : 1
+3 1, 2 (0.2) : 1
+3 2, 2 (0.4) : 1
+3 3, 4 (0.4) : 1
+3 3, 1 (0.1) : 1

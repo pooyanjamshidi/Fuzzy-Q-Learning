@@ -1,10 +1,22 @@
-# Fuzzy-Q-Learning
+# README
+
+## Fuzzy-Q-Learning
 A matlab implementation of Fuzzy Q-Learning for making cloud auto-scaling more intelligent through online policy learning.
 
+## Demo:
+```
+./Demo/demo.m
+```
+
 Please cite this paper if you use this code:
+```
+Pooyan Jamshidi, Amir Sharifloo, Claus Pahl, Hamid Arabnejad, Andreas Metzger, Giovani Estrada, "Fuzzy Self-Learning Controllers for Elasticity Management in Dynamic Cloud Architectures", in Proc. of IEEE/IFIP WICSA and CompArch, (April 2016).
+```
 
-Pooyan Jamshidi, Amir Sharifloo, Claus Pahl, Andreas Metzger, Giovani Estrada, "Self-Learning Cloud Controllers: Fuzzy Q-Learning for Knowledge Evolution", arXiv:1507.00567, 2015.
+## Contact
 
-you can access the paper with this link: http://arxiv.org/abs/1507.00567
+If you notice a bug, want to request a feature, or have a question or feedback, please send an email to pooyan.jamshidi@gmail.com. We would like to hear from people using our code.
 
-For questions or comments regarding scientific part or technical implementation, please contact pooyan.jamshidi~at~gmail.com.
+## Licence
+
+The code is published under the [FreeBSD License](https://github.com/pooyanjamshidi/Fuzzy-Q-Learning/blob/master/LICENSE.txt).

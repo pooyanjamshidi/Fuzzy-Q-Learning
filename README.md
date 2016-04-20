@@ -10,7 +10,7 @@ A matlab implementation of Fuzzy Q-Learning for making cloud auto-scaling more i
 
 Please cite this paper if you use this code:
 ```
-Pooyan Jamshidi, Amir Sharifloo, Claus Pahl, Hamid Arabnejad, Andreas Metzger, Giovani Estrada, "Fuzzy Self-Learning Controllers for Elasticity Management in Dynamic Cloud Architectures", in Proc. of IEEE/IFIP WICSA and CompArch, (April 2016).
+P. Jamshidi, A. Sharifloo, C. Pahl, H. Arabnejad, A. Metzger, G. Estrada, "Fuzzy Self-Learning Controllers for Elasticity Management in Dynamic Cloud Architectures", in Proc. of IEEE/IFIP WICSA and CompArch, (April 2016).
 ```
 
 ## Contact

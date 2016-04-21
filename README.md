@@ -12,6 +12,7 @@ Please cite the following paper if you used the code:
 ```
 P. Jamshidi, A. Sharifloo, C. Pahl, H. Arabnejad, A. Metzger, G. Estrada, "Fuzzy Self-Learning Controllers for Elasticity Management in Dynamic Cloud Architectures", in Proc. of IEEE/IFIP WICSA and CompArch, (April 2016).
 ```
+
 [PDF](www.doc.ic.ac.uk/~pjamshid/PDF/qosa16.pdf)
 
 ## Contact

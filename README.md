@@ -19,4 +19,4 @@ If you notice a bug, want to request a feature, or have a question or feedback, 
 
 ## Licence
 
-The code is published under the [FreeBSD License](https://github.com/pooyanjamshidi/Fuzzy-Q-Learning/blob/master/LICENSE.txt).
+The code is published under the [FreeBSD License](https://github.com/pooyanjamshidi/Fuzzy-Q-Learning/blob/master/LICENSE.md).

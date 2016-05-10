@@ -1,4 +1,4 @@
-The code is released under the FreeBSD License.
+The FreeBSD License
 
 Copyright (c) 2016, Pooyan Jamshidi, Imperial College London.
 All rights reserved.

@@ -1,4 +1,4 @@
-# README
+# README (https://img.shields.io/pypi/l/Django.svg)
 
 ## Fuzzy-Q-Learning
 A matlab implementation of Fuzzy Q-Learning for making cloud auto-scaling more intelligent through online policy learning.

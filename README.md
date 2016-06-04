@@ -1,4 +1,4 @@
-# README
+# README [![License](https://img.shields.io/pypi/l/Django.svg)](https://github.com/pooyanjamshidi/Fuzzy-Q-Learning/blob/master/LICENSE.md)
 
 ## Fuzzy-Q-Learning
 A matlab implementation of Fuzzy Q-Learning for making cloud auto-scaling more intelligent through online policy learning.

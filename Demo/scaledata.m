@@ -17,8 +17,7 @@ function dataout = scaledata(datain,minval,maxval)
 % a_out = scaledata(a,0,1);
 % 
 % Output obtained: 
-%            0    0.1111    0.2222    0.3333    0.4444
-%       0.5556    0.6667    0.7778    0.8889    1.0000
+%           0    0.2500    0.5000    0.7500    1.0000
 
 dataout = datain - min(datain(:));
 dataout = (dataout/range(dataout(:)))*(maxval-minval);

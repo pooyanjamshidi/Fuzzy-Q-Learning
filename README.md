@@ -4,8 +4,9 @@
 A matlab implementation of Fuzzy Q-Learning for making cloud auto-scaling more intelligent through online policy learning.
 
 ## Demo:
-```
-./Demo/demo.m
+```matlab
+setup
+demo
 ```
 
 Please cite the following paper if you used the code:

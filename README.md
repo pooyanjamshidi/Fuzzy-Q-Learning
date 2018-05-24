@@ -3,7 +3,7 @@
 ## Fuzzy-Q-Learning
 A matlab implementation of Fuzzy Q-Learning for making cloud auto-scaling more intelligent through online policy learning.
 
-## Demo:
+## Demo (in Matlab environment):
 ```matlab
 setup
 demo
@@ -18,6 +18,6 @@ P. Jamshidi, A. Sharifloo, C. Pahl, H. Arabnejad, A. Metzger, G. Estrada, "Fuzzy
 
 If you notice a bug, want to request a feature, or have a question or feedback, please send an email to pooyan.jamshidi@gmail.com. We would like to hear from people using our code.
 
-## Licence
+## License
 
 The code is published under the [FreeBSD License](https://github.com/pooyanjamshidi/Fuzzy-Q-Learning/blob/master/LICENSE.md).

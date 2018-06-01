@@ -9,12 +9,18 @@ pathCell = regexp(path, pathsep, 'split');
 
 myDir = fileparts(mfilename('fullpath'));
 paths = genpath(myDir);
-paths = strread(paths,'%s','delimiter',':');
+paths = strread(paths, '%s', 'delimiter', ':');
 pathsToAdd = [];
+
+if ispc
+    del = '\';
+else
+    del = '/';
+end
 
 for i=1:length(paths)
     thisPath = paths{i};
-    thisPathSplit = strread(thisPath,'%s','delimiter','/');
+    thisPathSplit = strread(thisPath, '%s', 'delimiter', del);
     addThisPath = 1;
     
     % Do not add any directories or files starting with a . or a ~ or if it
@@ -37,7 +43,12 @@ end
 if ~isempty(pathsToAdd)
     addpath(pathsToAdd);
 end
-rmpath('Controllers/RobusT2Scale')
+
+if ispc
+    rmpath('Controllers\RobusT2Scale')
+else
+    rmpath('Controllers/RobusT2Scale')
+end
 rmpath('FQL4KE')
 end
 
